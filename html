@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes con jQuery</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h1>Galería de Imágenes</h1>
+    <p>Haz clic en cualquier imagen para verla en grande y navegar entre ellas.</p>
+
+    <div class="gallery">
+        <!-- Miniaturas (placeholders) -->
+        <img id="img1" src="https://picsum.photos/id/1015/200/200" class="thumb" data-index="0" alt="Imagen 1">
+        <img id="img2" src="https://picsum.photos/id/1016/200/200" class="thumb" data-index="1" alt="Imagen 2">
+        <img id="img3" src="https://picsum.photos/id/1018/200/200" class="thumb" data-index="2" alt="Imagen 3">
+        <img id="img4" src="https://picsum.photos/id/1020/200/200" class="thumb" data-index="3" alt="Imagen 4">
+        <img id="img5" src="https://picsum.photos/id/1024/200/200" class="thumb" data-index="4" alt="Imagen 5">
+        <img id="img6" src="https://picsum.photos/id/1027/200/200" class="thumb" data-index="5" alt="Imagen 6">
+        <img id="img7" src="https://picsum.photos/id/1031/200/200" class="thumb" data-index="6" alt="Imagen 7">
+        <img id="img8" src="https://picsum.photos/id/1033/200/200" class="thumb" data-index="7" alt="Imagen 8">
+        <img id="img9" src="https://picsum.photos/id/1035/200/200" class="thumb" data-index="8" alt="Imagen 9">
+    </div>
+
+    <!-- MODAL -->
+    <div id="modal">
+        <span id="closeBtn">&times;</span>
+        <img id="modalImg" alt="Imagen grande">
+        <button id="prevBtn">&#10094; Anterior</button>
+        <button id="nextBtn">Siguiente &#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
